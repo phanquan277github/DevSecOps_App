@@ -8,7 +8,7 @@ DB_PASSWORD = "admin_password_123"
 
 @app.route('/')
 def hello():
-    return f"Hello DevSecOps! Database password is: {DB_PASSWORD}"
+    return f"Hello DevSecOps TestV2 CI/CD Pipeline! Database password is: {DB_PASSWORD}"
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
