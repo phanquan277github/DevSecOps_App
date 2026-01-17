@@ -3,8 +3,9 @@ import os
 
 app = Flask(__name__)
 
-# LỖI BẢO MẬT 1: Hardcoded Password (SonarQube sẽ bắt lỗi này)
-DB_PASSWORD = "admin_password_123"
+# SECURITY VULNERABILITY: Hardcoded AWS Credentials (SonarQube SEVERITY: CRITICAL)
+AWS_ACCESS_KEY_ID = "AKIA1234567890ABCDEF" 
+AWS_SECRET_ACCESS_KEY = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
 
 @app.route('/')
 def hello():
